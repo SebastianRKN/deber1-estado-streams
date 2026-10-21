@@ -1,0 +1,4 @@
+*.apk
+*.aab
+*.log
+.DS_Store
