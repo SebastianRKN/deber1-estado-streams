@@ -1,8 +1,8 @@
 # Respuestas · Deber 1
 
 Preparadas con asistencia de Codex a partir del código, las pruebas automatizadas
-y el video proporcionado. El video evidencia la pestaña Future; todavía falta
-confirmar las observaciones del contador y grabar la demostración de Stream.
+y los dos videos proporcionados: el primero evidencia Future y el segundo Stream.
+Todavía falta confirmar las observaciones del contador en el teléfono.
 
 ## 1. setState y el botón atrás
 
@@ -110,6 +110,9 @@ Una prueba abre y cierra cincuenta Cubits y verifica que no queden listeners act
 Con Future pulso Consultar mientras tengo Wi-Fi y guardo una foto del estado y su hora.
 Si lo apago, esa foto no cambia. Con Stream la app escucha los avisos y va mostrando
 Wi-Fi, Sin conexión y Wi-Fi nuevamente a medida que cambian, sin pulsar Consultar.
+Esto se observa en el segundo video: la pestaña Con Stream permanece seleccionada,
+se apaga Wi-Fi desde los ajustes rápidos y aparece Sin conexión; al reconectar,
+la pantalla vuelve a Wi-Fi sin pulsar un botón de consulta en la app.
 
 Pediría con Future el detalle de un pedido al abrirlo y el resultado de enviar un formulario.
 Observaría con Stream los mensajes entrantes de un chat y la ubicación de un repartidor.
@@ -120,6 +123,7 @@ En este ejercicio se observa el tipo de conexión disponible, no se certifica ac
 - [ ] Probé el contador en las tres ramas y confirmé las observaciones.
 - [ ] Cerré y volví a abrir el contador y comprobé persistencia real.
 - [ ] Vi el BlocObserver en la consola durante la prueba del celular.
-- [ ] Probé Wi-Fi / sin conexión y, si están disponibles, datos móviles.
+- [x] Los videos muestran Wi-Fi / sin conexión en Future y en Stream.
+- [ ] Si dispongo de datos móviles, comprobé también esa transición.
 - [x] Añadí al repositorio el video proporcionado como `demo.mp4`.
 - [ ] Revisé estas respuestas para que describan lo que efectivamente observé.
