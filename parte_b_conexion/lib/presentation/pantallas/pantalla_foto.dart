@@ -30,8 +30,9 @@ class _PantallaFotoState extends State<PantallaFoto> {
         _error = null;
       });
     } catch (_) {
-      if (mounted)
+      if (mounted) {
         setState(() => _error = 'No se pudo consultar. Intenta otra vez.');
+      }
     } finally {
       if (mounted) setState(() => _consultando = false);
     }
