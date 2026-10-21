@@ -1,4 +1,5 @@
 import 'dart:async';
+
 import 'package:flutter_test/flutter_test.dart';
 import 'package:parte_b_conexion/domain/entities/estado_conexion.dart';
 import 'package:parte_b_conexion/domain/repositories/conexion_repository.dart';
@@ -13,7 +14,8 @@ class Repo implements ConexionRepository {
   Future<EstadoConexion> consultarAhora() => consulta();
   @override
   Stream<EstadoConexion> observarCambios() => eventos.stream;
-  ConexionCubit cubit() => ConexionCubit(ConsultarConexion(this), ObservarConexion(this));
+  ConexionCubit cubit() =>
+      ConexionCubit(ConsultarConexion(this), ObservarConexion(this));
 }
 
 void main() {
@@ -33,8 +35,12 @@ void main() {
     final repo = Repo();
     final cubit = repo.cubit();
     await Future.wait([cubit.iniciar(), cubit.iniciar()]);
-    for (final estado in [EstadoConexion.wifi, EstadoConexion.sinConexion,
-      EstadoConexion.sinConexion, EstadoConexion.datosMoviles]) {
+    for (final estado in [
+      EstadoConexion.wifi,
+      EstadoConexion.sinConexion,
+      EstadoConexion.sinConexion,
+      EstadoConexion.datosMoviles,
+    ]) {
       repo.eventos.add(estado);
     }
     await Future<void>.delayed(Duration.zero);
@@ -69,16 +75,19 @@ void main() {
     await cubit.close();
     await repo.eventos.close();
   });
-  test('error de consulta se informa y el stream permite recuperarse', () async {
-    final repo = Repo()..consulta = () async => throw StateError('prueba');
-    final cubit = repo.cubit();
-    await cubit.iniciar();
-    expect(cubit.error, isNotNull);
-    repo.eventos.add(EstadoConexion.wifi);
-    await Future<void>.delayed(Duration.zero);
-    expect(cubit.state, EstadoConexion.wifi);
-    expect(cubit.error, isNull);
-    await cubit.close();
-    await repo.eventos.close();
-  });
+  test(
+    'error de consulta se informa y el stream permite recuperarse',
+    () async {
+      final repo = Repo()..consulta = () async => throw StateError('prueba');
+      final cubit = repo.cubit();
+      await cubit.iniciar();
+      expect(cubit.error, isNotNull);
+      repo.eventos.add(EstadoConexion.wifi);
+      await Future<void>.delayed(Duration.zero);
+      expect(cubit.state, EstadoConexion.wifi);
+      expect(cubit.error, isNull);
+      await cubit.close();
+      await repo.eventos.close();
+    },
+  );
 }
