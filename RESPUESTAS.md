@@ -119,5 +119,5 @@ En este ejercicio se observa el tipo de conexión disponible, no se certifica ac
 - [ ] Cerré y volví a abrir el contador y comprobé persistencia real.
 - [ ] Vi el BlocObserver en la consola durante la prueba del celular.
 - [ ] Probé Wi-Fi / sin conexión y, si están disponibles, datos móviles.
-- [ ] Grabé `demo.mp4` y lo añadí al repositorio.
+- [x] Añadí al repositorio el video proporcionado como `demo.mp4`.
 - [ ] Revisé estas respuestas para que describan lo que efectivamente observé.

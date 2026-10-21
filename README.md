@@ -62,23 +62,22 @@ libera su suscripción; al volver se inicia una nueva y el contador comienza en 
 
 - `RESPUESTAS.md`: ocho respuestas, comparación y salida real de Git.
 - `VERIFICACION.md`: resultados y límites de las verificaciones.
-- `GRABAR_DEMO.md`: pasos y guion de 15–20 segundos.
 - `tools/verificar_arquitectura.ps1`: comprobación reproducible de imports y ramas.
-- `demo.mp4`: pendiente de la grabación real del estudiante.
+- `demo.mp4`: video proporcionado por el estudiante e incluido en el repositorio.
 
 Para verificar cada proyecto: `flutter analyze` y `flutter test` desde su carpeta.
 Para generar un instalador: `flutter build apk --release`.
 El APK se genera en `build/app/outputs/flutter-apk/app-release.apk` de cada proyecto.
 Se firma con la clave local de desarrollo para instalación académica; no es una publicación en tienda.
 
-## Después de grabar
+## Antes de entregar
 
-En la raíz y en `main`, guarda el video como `demo.mp4`, revisa las respuestas contra
-lo observado y actualiza las casillas de `RESPUESTAS.md`:
+El video ya está incluido como `demo.mp4`. Revisa las respuestas contra lo observado
+en el celular y actualiza las casillas de `RESPUESTAS.md`:
 
 ```powershell
-git add demo.mp4 RESPUESTAS.md
-git commit -m "docs: demo real y observaciones en celular"
+git add RESPUESTAS.md
+git commit -m "docs: observaciones en celular"
 git push origin main
 ```
 

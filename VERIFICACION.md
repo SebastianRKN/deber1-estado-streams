@@ -65,8 +65,8 @@ Los APK están firmados con la clave de desarrollo para instalación directa.
 | Instalación y ejecución en un teléfono físico | NOT RUN: no hay dispositivo conectado |
 | Persistencia después de cerrar realmente la app en Android | NOT RUN |
 | Cambios de Wi-Fi/datos móviles y retorno desde ajustes en el teléfono | NOT RUN |
-| Grabación real de demo.mp4 | NOT RUN |
+| Archivo demo.mp4 | RECIBIDO: video proporcionado por el estudiante; contenido no auditado |
 
 La compilación y las pruebas de widgets no demuestran por sí solas el funcionamiento
-del sensor de conexión en un teléfono concreto. Seguir GRABAR_DEMO.md y confirmar
+del sensor de conexión en un teléfono concreto. Revisar el video y confirmar
 las observaciones en RESPUESTAS.md antes de la entrega académica.
