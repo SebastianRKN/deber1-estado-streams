@@ -63,7 +63,8 @@ libera su suscripción; al volver se inicia una nueva y el contador comienza en 
 - `RESPUESTAS.md`: ocho respuestas, comparación y salida real de Git.
 - `VERIFICACION.md`: resultados y límites de las verificaciones.
 - `tools/verificar_arquitectura.ps1`: comprobación reproducible de imports y ramas.
-- `demo.mp4`: video proporcionado por el estudiante e incluido en el repositorio.
+- `demo.mp4`: video recibido de Con Future; pendiente reemplazarlo por la demostración
+  automática de Con Stream solicitada en B.3 (15–20 segundos).
 
 Para verificar cada proyecto: `flutter analyze` y `flutter test` desde su carpeta.
 Para generar un instalador: `flutter build apk --release`.
@@ -72,11 +73,11 @@ Se firma con la clave local de desarrollo para instalación académica; no es un
 
 ## Antes de entregar
 
-El video ya está incluido como `demo.mp4`. Revisa las respuestas contra lo observado
-en el celular y actualiza las casillas de `RESPUESTAS.md`:
+Reemplaza `demo.mp4` por la demostración de Con Stream. Revisa las respuestas contra
+lo observado en el celular y actualiza las casillas de `RESPUESTAS.md`:
 
 ```powershell
-git add RESPUESTAS.md
+git add demo.mp4 RESPUESTAS.md
 git commit -m "docs: observaciones en celular"
 git push origin main
 ```
