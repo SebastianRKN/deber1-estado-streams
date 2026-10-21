@@ -62,11 +62,15 @@ Los APK están firmados con la clave de desarrollo para instalación directa.
 
 | Comprobación | Estado |
 |---|---|
-| Instalación y ejecución en un teléfono físico | NOT RUN: no hay dispositivo conectado |
+| Instalación y ejecución de Parte B en un teléfono físico | PASS: visible en el video proporcionado |
 | Persistencia después de cerrar realmente la app en Android | NOT RUN |
-| Cambios de Wi-Fi/datos móviles y retorno desde ajustes en el teléfono | NOT RUN |
-| Archivo demo.mp4 | RECIBIDO: video proporcionado por el estudiante; contenido no auditado |
+| Future con Wi-Fi y sin conexión en el teléfono | PASS: el video muestra la consulta manual y el resultado anterior hasta volver a consultar |
+| Stream automático y datos móviles en el teléfono | NOT RUN: no aparecen en el video |
+| Archivo demo.mp4 según B.3 | FAIL: dura 22,34 segundos y muestra Con Future; se solicita Con Stream y 15–20 segundos |
 
 La compilación y las pruebas de widgets no demuestran por sí solas el funcionamiento
 del sensor de conexión en un teléfono concreto. Revisar el video y confirmar
-las observaciones en RESPUESTAS.md antes de la entrega académica.
+las observaciones en RESPUESTAS.md antes de la entrega académica. Reemplazar demo.mp4
+por una grabación de Con Stream que muestre los cambios automáticos al apagar y
+encender Wi-Fi, sin pulsar Consultar. El video actual sirve como evidencia de Future,
+pero no satisface la demostración solicitada en B.3.

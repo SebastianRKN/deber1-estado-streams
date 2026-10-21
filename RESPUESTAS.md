@@ -1,8 +1,8 @@
 # Respuestas · Deber 1
 
-Preparadas con asistencia de Codex a partir del código y las pruebas automatizadas.
-No se presentan como observaciones ya realizadas por el estudiante en un teléfono.
-Antes de entregar, confirmar o ajustar estas explicaciones con la prueba física.
+Preparadas con asistencia de Codex a partir del código, las pruebas automatizadas
+y el video proporcionado. El video evidencia la pestaña Future; todavía falta
+confirmar las observaciones del contador y grabar la demostración de Stream.
 
 ## 1. setState y el botón atrás
 
@@ -91,8 +91,10 @@ No hace falta un administrador global para expandir un panel o seleccionar una o
 La consulta devuelve el estado del momento en que se ejecuta. Al apagar Wi-Fi no se
 ejecuta otra consulta automáticamente; por eso permanece el resultado anterior y su hora.
 Era un dato correcto del momento anterior, que ya no describe el estado actual.
-La prueba de widgets cambia el repositorio y verifica que la pantalla solo cambia
-después de pulsar de nuevo «Consultar ahora». Falta corroborarlo con el Wi-Fi real.
+En el video proporcionado, después de apagar Wi-Fi, la pantalla conserva «Wi-Fi»
+y la hora 22:53:14. Tras consultar de nuevo muestra «Sin conexión» con la hora
+22:53:18. Al reconectar, conserva el resultado anterior hasta otra consulta.
+Esto evidencia que Future conserva la foto hasta que se solicita una nueva.
 
 ## 7. Cancelar la suscripción
 
